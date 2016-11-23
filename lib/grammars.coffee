@@ -396,12 +396,12 @@ module.exports =
 
   LaTeX:
     "File Based":
-      command: "latexmk"
+      command: "ptex2pdf"
       args: (context) -> ['-cd', '-quiet', '-pdf', '-pv', '-shell-escape', context.filepath]
 
   'LaTeX Beamer':
     "File Based":
-      command: "latexmk"
+      command: "ptex2pdf"
       args: (context) -> ['-cd', '-quiet', '-pdf', '-pv', '-shell-escape', context.filepath]
 
   LilyPond:
